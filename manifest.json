@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "程序员日薪计算器",
+  "version": "1.0",
+  "description": "根据月薪和工作时间计算当日已挣工资",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": ["storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; style-src 'self'"
+  }
+}

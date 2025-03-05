@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>设置</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="options-page">
+  <div class="container options-container">
+    <h1>工资计算器设置</h1>
+    
+    <div class="form-group">
+      <label for="monthlySalary">月工资 (元):</label>
+      <input type="number" id="monthlySalary" min="0" step="100" placeholder="请输入税前月薪">
+    </div>
+    
+    <div class="form-group">
+      <label for="workDaysPerMonth">每月工作天数:</label>
+      <input type="number" id="workDaysPerMonth" min="1" max="31" value="22" placeholder="默认22天">
+    </div>
+    
+    <div class="form-group">
+      <label for="startTime">上班时间:</label>
+      <input type="time" id="startTime" value="09:00">
+    </div>
+    
+    <div class="form-group">
+      <label for="endTime">下班时间:</label>
+      <input type="time" id="endTime" value="18:00">
+    </div>
+    
+    <div class="form-group checkbox-group">
+      <label class="checkbox-wrapper">
+        <input type="checkbox" id="defaultHideAmount">
+        <span class="checkbox-label">默认隐藏金额</span>
+      </label>
+    </div>
+    
+    <button id="saveBtn">保存设置</button>
+    <div id="status" class="status-message"></div>
+  </div>
+  <script src="js/options.js"></script>
+</body>
+</html>
